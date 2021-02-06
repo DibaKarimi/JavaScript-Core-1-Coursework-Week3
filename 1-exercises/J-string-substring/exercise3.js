@@ -7,8 +7,8 @@
 */
 
 let statement = "I do not like programming";
-
-let result = "";
+let indexOfStr = statement.indexOf("not");
+let result = statement.substring(0, indexOfStr) + statement.substring(indexOfStr + 4,statement.length);
 
 console.log(result);
 

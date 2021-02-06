@@ -15,7 +15,13 @@
   
 */
 
-function colonisers() {}
+function colonisers(voyager) {
+  let voyFamily = voyager.filter(
+    (voy) =>
+      voy.substring(voy.length - 6) === "family" && voy.substring(0, 1) === "A"
+  );
+  return voyFamily;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
